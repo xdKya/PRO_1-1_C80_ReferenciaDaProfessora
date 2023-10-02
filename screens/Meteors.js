@@ -7,7 +7,6 @@ import {
     Platform,
     StatusBar,
     Alert,
-    FlatList,
     Image,
     ImageBackground,
     Dimensions
@@ -103,12 +102,7 @@ export default class MeteorScreen extends Component {
             return (
                 <View style={styles.container}>
                     <SafeAreaView style={styles.droidSafeArea} />
-                    <FlatList
-                        keyExtractor={this.keyExtractor}
-                        data={meteors}
-                        renderItem={this.renderItem}
-                        horizontal={true}
-                    />
+
                 </View >
             );
         }
